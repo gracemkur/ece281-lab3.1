@@ -86,7 +86,9 @@ end top_basys3;
 architecture top_basys3_arch of top_basys3 is 
   
 	-- declare components
-
+    signal w_clk_slow     : std_logic;
+    signal w_lights_L     : std_logic_vector(2 downto 0);
+    signal w_lights_R     : std_logic_vector(2 downto 0);
   
 begin
 	-- PORT MAPS ----------------------------------------
