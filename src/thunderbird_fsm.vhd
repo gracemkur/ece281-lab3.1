@@ -141,9 +141,9 @@ begin
 	-- PROCESSES --------------------------------------------------------------------
     register_proc : process (i_clk, i_reset)
 	begin
-			--Reset state is yellow
+			--Reset state is 000?
 			if i_reset = '1' then
-			     f_s <= "10";
+			     f_s <= "000";
 			elsif (rising_edge(i_clk)) then
 			     f_s <= f_s_next;
 			end if;
